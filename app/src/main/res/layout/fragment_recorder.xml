@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/conte"
+
+
+    >
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:id="@+id/gif"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_marginTop="164dp"-->
+    <!--        android:src="@drawable/visual"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--    <com.gauravk.audiovisualizer.visualizer.BlastVisualizer-->
+    <!--        xmlns:custom="htctp://schemas.android.com/apk/res-auto"-->
+    <!--        android:id="@+id/blast"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        custom:avDensity="0.8"-->
+    <!--        custom:avType="fill"-->
+    <!--        custom:avColor="@color/av_dark_blue"-->
+    <!--        custom:avSpeed="normal"/>-->
+
+
+    <!--    <com.chibde.visualizer.LineBarVisualizer-->
+    <!--        android:id="@+id/visualizer"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        android:layout_marginTop="92dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/divider"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.149" />-->
+
+    <!--    <com.gauravk.audiovisualizer.visualizer.BlastVisualizer-->
+    <!--        android:id="@+id/blast"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_marginTop="144dp"-->
+    <!--        app:avColor="@color/av_dark_blue"-->
+    <!--        app:avDensity="0.8"-->
+    <!--        app:avSpeed="normal"-->
+    <!--        app:avType="fill"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/divider"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.125" />-->
+
+
+    <TextView
+        android:id="@+id/txtRexsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgAni"
+        android:layout_width="224dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_vinyl6"
+
+        app:layout_constraintBottom_toTopOf="@+id/audioRecordView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRexsta"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <com.visualizer.amplitude.AudioRecordView
+        android:id="@+id/audioRecordView"
+        android:layout_width="373dp"
+        android:layout_height="132dp"
+        android:layout_marginBottom="20dp"
+
+        app:chunkColor="#2196F3"
+        app:chunkMaxHeight="10000dp"
+        app:chunkMinHeight="1dp"
+        app:chunkRoundedCorners="true"
+
+        app:chunkSoftTransition="true"
+        app:chunkSpace="1dp"
+
+        app:chunkWidth="2dp"
+
+        app:direction="leftToRight"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Chronometer
+        android:id="@+id/crono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnrecord"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn"
+        android:contentDescription="TODO"
+        android:scaleType="center"
+        android:src="@drawable/ic_record"
+
+        app:circularflow_defaultRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crono"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="32dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/verdezul"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/crono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

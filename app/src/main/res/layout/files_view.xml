@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+
+
+        >
+
+
+        <ImageView
+            android:layout_weight="0"
+            android:id="@+id/imgvide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_play_circle_24"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:maxLines="3"
+            android:text="hola mundo :D"
+            android:textColor="@color/verdezul"
+            android:textSize="13dp"
+            android:ellipsize="end"
+
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="00:00:00"
+                android:textColor="@color/verdezul"
+
+                />
+
+
+            <TextView
+                android:id="@+id/video_quality"
+
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="1080"
+                android:textColor="@color/verdezul"
+
+                />
+
+            <TextView
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3dp"
+
+                android:text="@string/text_with_bullets"
+                android:textColor="@color/verdezul"
+
+                />
+            <TextView
+
+
+                android:id="@+id/video_size"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+
+                android:text="1.15"
+                android:textColor="@color/verdezul"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/menu_image"
+        android:layout_weight="0"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_menu"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+
+        />
+
+
+
+
+
+
+    
+</LinearLayout>

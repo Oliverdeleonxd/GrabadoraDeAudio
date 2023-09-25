@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:id="@+id/container"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#00DCDC"
+
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#777373">
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_vinyl6"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="240dp"
+                android:layout_height="24dp"
+
+                android:layout_marginEnd="5dp"
+
+
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+
+                android:text="Grabacion 9284858"
+                android:textColor="@color/verdezul"
+
+
+                android:textSize="23sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="@+id/img"
+                app:layout_constraintEnd_toStartOf="@+id/btnmenu"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvFecha"
+
+                app:layout_constraintTop_toTopOf="@+id/img"
+                app:layout_constraintVertical_bias="0.047" />
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+
+
+
+                android:paddingEnd="20dp"
+
+                android:singleLine="true"
+                android:text="hoy"
+                android:textAlignment="textStart"
+
+
+                android:textColor="@color/verdezul"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toTopOf="@+id/tvNombre"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageButton
+                android:id="@+id/btnmenu"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNombre"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNombre"
+                app:layout_constraintVertical_bias="0.13"
+                app:srcCompat="@drawable/ic_menu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
