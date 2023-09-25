@@ -1,4 +1,4 @@
-## GrabAudio - Aplicación Móvil para Grabación y Reproducción de Audio con Galería Multimedia
+## GrabAudio - Aplicación Móvil para Grabación y Reproducción de Audio con Galería Multimedia (En desarrollo)
 
 ### Descripción del Proyecto
 
